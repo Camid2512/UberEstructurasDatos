@@ -12,23 +12,22 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.EmptyBorder;
 
-public class TravelersNumber extends JFrame {
-
+public class StopsNumber extends JFrame {
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 5891882397657348029L;
-
+	private static final long serialVersionUID = 757006977718450794L;
 	private JLabel mainImage;
-	private JSpinner numTravelers;
+	private JSpinner numStops;
 	private SpinnerNumberModel n1;
 	private JButton continueBtn, backBtn;
 	
-	public TravelersNumber() {
+	public StopsNumber() {
 		setSize(1296, 759);
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setTitle("Ingrese el numero de pasajeros");
+		setTitle("Ingrese el numero de paradas");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLayout(null);
 		
@@ -54,22 +53,22 @@ public class TravelersNumber extends JFrame {
 		n1.setMinimum(1);
 		n1.setMaximum(4);
 		
-		numTravelers = new JSpinner();
-		numTravelers.setBounds(284, 300, 715, 73);
-		numTravelers.setModel(n1);
-		numTravelers.setValue(1);
-		numTravelers.setEditor(new JSpinner.DefaultEditor(numTravelers));
-		numTravelers.setBorder(new EmptyBorder(20, 10, 20, 20));
-		numTravelers.setFont(new Font("Arial", 1, 25));
-		numTravelers.setForeground(new Color(188, 186, 190));
-		numTravelers.setBackground(new Color(188, 186, 190));
-		numTravelers.getEditor().getComponent(0).setBackground(new Color(188, 186, 190));
-		add(numTravelers);
+		numStops = new JSpinner();
+		numStops.setBounds(284, 300, 715, 73);
+		numStops.setModel(n1);
+		numStops.setValue(1);
+		numStops.setEditor(new JSpinner.DefaultEditor(numStops));
+		numStops.setBorder(new EmptyBorder(20, 10, 20, 20));
+		numStops.setFont(new Font("Arial", 1, 25));
+		numStops.setForeground(new Color(188, 186, 190));
+		numStops.setBackground(new Color(188, 186, 190));
+		numStops.getEditor().getComponent(0).setBackground(new Color(188, 186, 190));
+		add(numStops);
 		
 		mainImage = new JLabel();
 		mainImage.setBounds(0, 0, 1280, 720);
 		Image temporal1;
-		temporal1 = new ImageIcon("src/Images/numpersonas.png").getImage();
+		temporal1 = new ImageIcon("src/Images/numparadas.png").getImage();
 
 		ImageIcon img1;
 		img1 = new ImageIcon(
@@ -88,12 +87,12 @@ public class TravelersNumber extends JFrame {
 		this.mainImage = mainImage;
 	}
 
-	public JSpinner getNumTravelers() {
-		return numTravelers;
+	public JSpinner getNumStops() {
+		return numStops;
 	}
 
-	public void setNumTravelers(JSpinner numTravelers) {
-		this.numTravelers = numTravelers;
+	public void setNumStops(JSpinner numStops) {
+		this.numStops = numStops;
 	}
 
 	public SpinnerNumberModel getN1() {
@@ -125,4 +124,5 @@ public class TravelersNumber extends JFrame {
 	}
 	
 	
+
 }

@@ -6,29 +6,28 @@ import java.awt.Image;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.EmptyBorder;
 
-public class TravelersNumber extends JFrame {
-
+public class SelectStops extends JFrame {
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 5891882397657348029L;
-
+	private static final long serialVersionUID = -3967974649815278975L;
 	private JLabel mainImage;
-	private JSpinner numTravelers;
-	private SpinnerNumberModel n1;
 	private JButton continueBtn, backBtn;
+	private JComboBox<String> parada1, parada2;
 	
-	public TravelersNumber() {
+	public SelectStops() {
 		setSize(1296, 759);
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setTitle("Ingrese el numero de pasajeros");
+		setTitle("Seleccione sus paradas");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLayout(null);
 		
@@ -50,26 +49,26 @@ public class TravelersNumber extends JFrame {
 //		signUpBtn.setBorderPainted(false);
 		add(backBtn);
 		
-		n1 = new SpinnerNumberModel();
-		n1.setMinimum(1);
-		n1.setMaximum(4);
+		parada1 = new JComboBox<>();
+		parada1.setBounds(320, 376, 633, 46);
+		parada1.setBackground(new Color(225, 223, 228));
+		parada1.setForeground(Color.black);
+		parada1.setFont(new Font("Arial", 1, 25));
+		add(parada1);
 		
-		numTravelers = new JSpinner();
-		numTravelers.setBounds(284, 300, 715, 73);
-		numTravelers.setModel(n1);
-		numTravelers.setValue(1);
-		numTravelers.setEditor(new JSpinner.DefaultEditor(numTravelers));
-		numTravelers.setBorder(new EmptyBorder(20, 10, 20, 20));
-		numTravelers.setFont(new Font("Arial", 1, 25));
-		numTravelers.setForeground(new Color(188, 186, 190));
-		numTravelers.setBackground(new Color(188, 186, 190));
-		numTravelers.getEditor().getComponent(0).setBackground(new Color(188, 186, 190));
-		add(numTravelers);
+		parada2 = new JComboBox<>();
+		parada2.setBounds(320, 376, 633, 46);
+		parada2.setBackground(new Color(225, 223, 228));
+		parada2.setForeground(Color.black);
+		parada2.setFont(new Font("Arial", 1, 25));
+		add(parada2);
+		
+		
 		
 		mainImage = new JLabel();
 		mainImage.setBounds(0, 0, 1280, 720);
 		Image temporal1;
-		temporal1 = new ImageIcon("src/Images/numpersonas.png").getImage();
+		temporal1 = new ImageIcon("src/Images/infoparadas.png").getImage();
 
 		ImageIcon img1;
 		img1 = new ImageIcon(
@@ -88,22 +87,6 @@ public class TravelersNumber extends JFrame {
 		this.mainImage = mainImage;
 	}
 
-	public JSpinner getNumTravelers() {
-		return numTravelers;
-	}
-
-	public void setNumTravelers(JSpinner numTravelers) {
-		this.numTravelers = numTravelers;
-	}
-
-	public SpinnerNumberModel getN1() {
-		return n1;
-	}
-
-	public void setN1(SpinnerNumberModel n1) {
-		this.n1 = n1;
-	}
-
 	public JButton getContinueBtn() {
 		return continueBtn;
 	}
@@ -120,9 +103,26 @@ public class TravelersNumber extends JFrame {
 		this.backBtn = backBtn;
 	}
 
+	public JComboBox<String> getParada1() {
+		return parada1;
+	}
+
+	public void setParada1(JComboBox<String> parada1) {
+		this.parada1 = parada1;
+	}
+
+	public JComboBox<String> getParada2() {
+		return parada2;
+	}
+
+	public void setParada2(JComboBox<String> parada2) {
+		this.parada2 = parada2;
+	}
+
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 	
 	
+
 }

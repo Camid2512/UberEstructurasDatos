@@ -1,10 +1,5 @@
 package co.edu.unbosque.view;
 
-/** 
- * Esta es la clase ventana de CRUD civil
- * @author Julian Garcia
- * @version 1.0
- * @since 26/09/2023*/
 
 import java.awt.Color;
 import java.awt.Font;
@@ -38,20 +33,20 @@ public class MainWindow extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLayout(null);
 
-		// Boton CIVIL
+		
 		logInBtn = new JButton();
 		logInBtn.setBounds(345, 462, 278, 60);
-		logInBtn.setToolTipText("Este boton nos lleva a ver el CRUD completo del mismo");
+		logInBtn.setToolTipText("Oprima este boton para iniciar sesion");
 		logInBtn.setBackground(new Color(0, 0, 0, 0));
 //		logInBtn.setOpaque(false);
 //		logInBtn.setContentAreaFilled(false);
 //		logInBtn.setBorderPainted(false);
 		add(logInBtn);
 
-		// Boton Militar
+		
 		signUpBtn = new JButton();
 		signUpBtn.setBounds(654, 462, 278, 60);
-		signUpBtn.setToolTipText("Este boton nos lleva al menu de militar");
+		signUpBtn.setToolTipText("Oprima este boton para registrarse");
 //		signUpBtn.setBackground(new Color(0, 0, 0, 0));
 //		signUpBtn.setOpaque(false);
 //		signUpBtn.setContentAreaFilled(false);
