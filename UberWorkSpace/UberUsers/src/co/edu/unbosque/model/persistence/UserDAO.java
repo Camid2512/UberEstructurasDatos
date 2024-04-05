@@ -8,6 +8,9 @@ public class UserDAO implements CRUDOperation{
 	
 	private MyLinkedList<UserDTO> list;
 	
+	public UserDAO() {
+		list = new MyLinkedList<>();
+	}
 
 	@Override
 	public void create(Object obj) {

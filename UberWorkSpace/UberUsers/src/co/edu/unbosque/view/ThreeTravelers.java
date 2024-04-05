@@ -6,6 +6,7 @@ import java.awt.Image;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -21,6 +22,7 @@ public class ThreeTravelers extends JFrame{
 	private JButton nextBtn, backBtn;
 	private JTextField travelerOneName,travelerOneDocument, travelerTwoName,travelerTwoDocument, travelerThreeName,travelerThreeDocument;
 	private TextPrompt placeholder;
+	private JComboBox<String> parada1, parada2, parada3;
 	
 	public ThreeTravelers() {
 		setSize(1296, 759);
@@ -89,6 +91,27 @@ public class ThreeTravelers extends JFrame{
 		travelerThreeDocument.setFont(new Font("Arial", 1, 25));
 		travelerThreeDocument.setForeground(Color.black);
 		add(travelerThreeDocument);
+		
+		parada1 = new JComboBox<>();
+		parada1.setBounds(101, 424, 333, 46);
+		parada1.setBackground(new Color(225, 223, 228));
+		parada1.setForeground(Color.black);
+		parada1.setFont(new Font("Arial", 1, 25));
+		add(parada1);
+		
+		parada2 = new JComboBox<>();
+		parada2.setBounds(458, 424, 333, 46);
+		parada2.setBackground(new Color(225, 223, 228));
+		parada2.setForeground(Color.black);
+		parada2.setFont(new Font("Arial", 1, 25));
+		add(parada2);
+		
+		parada3 = new JComboBox<>();
+		parada3.setBounds(814, 424, 333, 46);
+		parada3.setBackground(new Color(225, 223, 228));
+		parada3.setForeground(Color.black);
+		parada3.setFont(new Font("Arial", 1, 25));
+		add(parada3);
 		
 		
 		backBtn = new JButton();

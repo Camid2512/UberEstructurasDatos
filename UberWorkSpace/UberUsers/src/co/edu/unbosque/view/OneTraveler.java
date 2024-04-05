@@ -6,6 +6,7 @@ import java.awt.Image;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -22,6 +23,7 @@ public class OneTraveler extends JFrame{
 	private JButton nextBtn, backBtn;
 	private JTextField travelerOneName,travelerOneDocument;
 	private TextPrompt placeholder;
+	private JComboBox<String> parada;
 	
 public OneTraveler() {
 	setSize(1296, 759);
@@ -50,6 +52,13 @@ public OneTraveler() {
 	travelerOneDocument.setFont(new Font("Arial", 1, 25));
 	travelerOneDocument.setForeground(Color.black);
 	add(travelerOneDocument);
+	
+	parada = new JComboBox<>();
+	parada.setBounds(472, 466, 333, 46);
+	parada.setBackground(new Color(225, 223, 228));
+	parada.setForeground(Color.black);
+	parada.setFont(new Font("Arial", 1, 25));
+	add(parada);
 	
 	
 	backBtn = new JButton();

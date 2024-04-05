@@ -4,17 +4,17 @@ public class PassangerDTO {
 
 	private String name;
 	private long documentId;
-	private TripDTO viaje;
+	private String parada;
 	
 	public PassangerDTO() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public PassangerDTO(String name, long documentId, TripDTO viaje) {
+	public PassangerDTO(String name, long documentId, String parada) {
 		super();
 		this.name = name;
 		this.documentId = documentId;
-		this.viaje = viaje;
+		this.parada = parada;
 	}
 
 	public String getName() {
@@ -33,17 +33,17 @@ public class PassangerDTO {
 		this.documentId = documentId;
 	}
 
-	public TripDTO getViaje() {
-		return viaje;
+	public String getParada() {
+		return parada;
 	}
 
-	public void setViaje(TripDTO viaje) {
-		this.viaje = viaje;
+	public void setParada(String parada) {
+		this.parada = parada;
 	}
 
 	@Override
 	public String toString() {
-		return "PassangerDTO [name=" + name + ", documentId=" + documentId + ", viaje=" + viaje + "]";
+		return "PassangerDTO [name=" + name + ", documentId=" + documentId + ", parada=" + parada + "]";
 	}
 	
 	

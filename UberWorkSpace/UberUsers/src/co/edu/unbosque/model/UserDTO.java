@@ -6,20 +6,20 @@ public class UserDTO {
 
 	private String user;
 	private String password;
+	private TripDTO viaje;
 	private MyDoubleLinkedList<PassangerDTO> passangers;
 	
 	public UserDTO() {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	public UserDTO(String user, String password, MyDoubleLinkedList<PassangerDTO> passangers) {
+	public UserDTO(String user, String password, TripDTO viaje, MyDoubleLinkedList<PassangerDTO> passangers) {
 		super();
 		this.user = user;
 		this.password = password;
+		this.viaje = viaje;
 		this.passangers = passangers;
 	}
-
 
 	public String getUser() {
 		return user;
@@ -37,6 +37,14 @@ public class UserDTO {
 		this.password = password;
 	}
 
+	public TripDTO getViaje() {
+		return viaje;
+	}
+
+	public void setViaje(TripDTO viaje) {
+		this.viaje = viaje;
+	}
+
 	public MyDoubleLinkedList<PassangerDTO> getPassangers() {
 		return passangers;
 	}
@@ -45,12 +53,10 @@ public class UserDTO {
 		this.passangers = passangers;
 	}
 
-
 	@Override
 	public String toString() {
-		return "UserDTO [user=" + user + ", password=" + password + ", passangers=" + passangers + "]";
+		return "UserDTO [user=" + user + ", password=" + password + ", viaje=" + viaje + ", passangers=" + passangers
+				+ "]";
 	}
 	
-	
-
 }

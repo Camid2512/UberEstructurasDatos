@@ -9,9 +9,6 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JSpinner;
-import javax.swing.SpinnerNumberModel;
-import javax.swing.border.EmptyBorder;
 
 public class SelectStops extends JFrame {
 	
@@ -32,7 +29,7 @@ public class SelectStops extends JFrame {
 		setLayout(null);
 		
 		continueBtn = new JButton();
-		continueBtn.setBounds(487, 394, 306, 62);
+		continueBtn.setBounds(466, 533, 346, 52);
 		continueBtn.setToolTipText("Oprime para continuar");
 		continueBtn.setBackground(new Color(0, 0, 0, 0));
 //		logInBtn.setOpaque(false);
@@ -50,14 +47,14 @@ public class SelectStops extends JFrame {
 		add(backBtn);
 		
 		parada1 = new JComboBox<>();
-		parada1.setBounds(320, 376, 633, 46);
+		parada1.setBounds(115, 347, 429, 68);
 		parada1.setBackground(new Color(225, 223, 228));
 		parada1.setForeground(Color.black);
 		parada1.setFont(new Font("Arial", 1, 25));
 		add(parada1);
 		
 		parada2 = new JComboBox<>();
-		parada2.setBounds(320, 376, 633, 46);
+		parada2.setBounds(755, 347, 429, 68);
 		parada2.setBackground(new Color(225, 223, 228));
 		parada2.setForeground(Color.black);
 		parada2.setFont(new Font("Arial", 1, 25));

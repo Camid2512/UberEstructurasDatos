@@ -32,7 +32,7 @@ public class StopsNumber extends JFrame {
 		setLayout(null);
 		
 		continueBtn = new JButton();
-		continueBtn.setBounds(487, 394, 306, 62);
+		continueBtn.setBounds(416, 384, 445, 69);
 		continueBtn.setToolTipText("Oprime para continuar");
 		continueBtn.setBackground(new Color(0, 0, 0, 0));
 //		logInBtn.setOpaque(false);
