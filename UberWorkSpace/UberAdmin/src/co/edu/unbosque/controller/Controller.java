@@ -150,6 +150,7 @@ public class Controller implements ActionListener {
 		}
 		
 		case "botonAgregar": {
+			System.out.println("???");
 			agNodo.setVisible(true);
 			vC.setVisible(false);
 			break;
